@@ -1,29 +1,97 @@
 *,
 *::before,
-*::after{
+*::after {
     padding: 0;
     margin: 0;
 }
 
-body{
+body {
     font-family: 'Montserrat', sans-serif;
-    background-color: dimgray;
-}
-
-.container{
 
 }
+
+
+/* HEADER */
+.container {
+    display: flex;
+
+    width: 100%;
+    padding: 0 240px 0 240px;
+    max-width: 1440px;
+
+}
+
 
 .header {
+    width: 100%;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding: 0 240px 0 240px;
+    justify-content: space-between;
 }
 
-.navLink{
+.logoSect {
+    padding: 10px 0 10px 0;
+}
+
+.logo {
+    height: 30px;
+}
+
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 0 0;
+}
+
+.navLink {
+    font-size: 18px;
     text-decoration: none;
-    padding-left: 25px;
     color: black;
+    margin-left: 25px;
 }
 
+.navLink:hover {
+    border-bottom: orangered 2px solid;
+}
+
+
+/* MAIN */
+
+.intro {
+    z-index: 0;
+    height: 883px;
+    width: 1920px;
+    overflow: hidden;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.intro_inner{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    font-weight: bold;
+}
+
+.intro_title{
+    font-size: 30px;
+    padding: 150px 0 10px 0;
+}
+
+.intro_subtitle{
+    font-weight: lighter;
+    padding-bottom: 20px;
+}
+
+.priceBtn{
+    font-size: 22px;
+    width: 240px;
+    height: 45px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
