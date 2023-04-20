@@ -7,42 +7,79 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="header">
     <div class="container">
-        <div class="logoSect">
-            <a href="#"><img class="logo" src="logo.svg" alt="Logo"></a>
-        </div>
+        <a href="#"><img class="logo" src="images/logo.svg" alt="Logo"></a>
         <nav class="navBar">
-            <a id="navLink1" class="navLink" href="#">Главная</a>
-            <a id="navLink2" class="navLink" href="#">Наш автопарк</a>
-            <a id="navLink3" class="navLink" href="#">Почему мы</a>
-            <a id="navLink4" class="navLink" href="#">Наша команда</a>
-            <a id="navLink5" class="navLink" href="#">Наши преимущества</a>
-            <a id="navLink6" class="navLink" href="#">Отзывы</a>
-            <a id="navLink7" class="navLink" href="#">Вопросы</a>
+            <a class="navLink" href="#" data-scroll="#intro">Главная</a>
+            <a class="navLink" href="#" data-scroll="#autopark">Наш автопарк</a>
+            <a class="navLink" href="#" data-scroll="#why">Почему мы</a>
+            <a class="navLink" href="#" data-scroll="#team">Наша команда</a>
+            <a class="navLink" href="#" data-scroll="#advantages">Наши преимущества</a>
+            <a class="navLink" href="#" data-scroll="#reviews">Отзывы</a>
+            <a class="navLink" href="#" data-scroll="#faq">Вопросы</a>
         </nav>
+        <div class="numberInfo">
+            <a href="tel:+79324401803" class="number">+79324401803</a>
+            <p class="numberTime">Пн-Сб с 9.00 по 20.00</p>
+        </div>
     </div>
 </header>
-<div class="intro">
+<div class="intro" id="intro">
     <div class="container">
-        <section class="intro_inner">
+        <div class="introInner">
             <h1 class="intro_title">Автомобильные перевозки всех типов грузов от 1 кг до 100 тонн</h1>
             <p class="intro_subtitle">С 2009 года перевозим грузы по всей России, а также в странны СНГ, Европу и
                 Китай</p>
             <button class="priceBtn">Рассчитать стоимость</button>
-        </section>
-    </div>
-</div>
-<div class="main">
-    <div class="container">
-        <div class="avtopark">
-            <h1>Наш автопарк</h1>
-
         </div>
     </div>
 </div>
+<div class="autopark" id="autopark">
+    <div class="container">
+        <h1 class="autoparkTitle">Наш автопарк</h1>
+            <p>Тенты</p>
+            <p>Рефрижераторы</p>
+            <p>Тралы</p>
+    </div>
+</div>
+<div class="why" id="why">
+    <div class="container">
+        <h1>5 причин почему нам доверяют</h1>
+        <ul>
+            <li>Машины находятся в собственности ИП "Gruzilkin"</li>
+            <li>Возраст грузовиков не старше 3 лет</li>
+            <li>ГЛОНАСС трекинг местонахождения каждого грузовика</li>
+            <li>Обслуживание по регламенту только на диллерских СТО</li>
+            <li>Штатные водители с опытом международных перевозок</li>
+        </ul>
+    </div>
+</div>
+<div class="team" id="team">
+    <div class="container">
+        <h1>Наша команда</h1>
+    </div>
+</div>
+<div class="advantages" id="advantages">
+    <div class="container">
+        <h1>Наши преимущества</h1>
+    </div>
+</div>
+<div class="reviews" id="reviews">
+    <div class="container">
+        <h1>Отзывы</h1>
+    </div>
+</div>
+<div class="faq" id="faq">
+    <div class="container">
+        <h1>Вопросы</h1>
+    </div>
+</div>
+
+<script src="app.js"></script>
 </body>
 </html>
