@@ -11,49 +11,63 @@ body {
 }
 
 
-/* HEADER */
 .container {
     display: flex;
-
+    flex-direction: row;
     width: 100%;
-    padding: 0 240px 0 240px;
     max-width: 1440px;
-
+    margin: 0 240px;
+    padding: 0;
 }
+
+/* HEADER */
 
 
 .header {
-    width: 100%;
     background-color: #fff;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
 }
 
-.logoSect {
-    padding: 10px 0 10px 0;
-}
 
 .logo {
-    height: 30px;
+    margin: 15px auto;
 }
 
 
 .navBar {
     display: flex;
     flex-direction: row;
-    margin: 15px 0 0 0;
+    margin: auto;
+    float: right;
 }
 
 .navLink {
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
     color: black;
-    margin-left: 25px;
+    margin: 0 15px;
 }
 
 .navLink:hover {
-    border-bottom: orangered 2px solid;
+    border-bottom: orangered 0.5px solid;
+}
+
+.numberInfo{
+    margin: auto 0;
+}
+
+.number{
+    font-size: 18px;
+    font-weight: bold;
+    color: orangered;
+    text-decoration: none;
+}
+
+.numberTime{
+    font-size: 14px;
+    color: dimgray;
 }
 
 
@@ -61,15 +75,16 @@ body {
 
 .intro {
     z-index: 0;
-    height: 883px;
-    width: 1920px;
+    height: 800px;
+    width: 100%;
     overflow: hidden;
-    background-image: url(background.jpg);
+    background-image: url(images/background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
 }
 
-.intro_inner{
+.introInner{
     display: flex;
     flex-direction: column;
     width: 450px;
@@ -94,4 +109,47 @@ body {
     color: white;
     border: none;
     border-radius: 10px;
+}
+
+.priceBtn:hover{
+    background-color: darkblue;
+    transition: background-color 0.7s ease-in-out;
+}
+
+
+/* AUTO PARK */
+
+.autopark{
+    padding-top: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.autoparkInfo{
+    padding-top: 50px;
+}
+
+/*WHY*/
+.why{
+    padding-top: 15px;
+}
+/*TEAM*/
+.team{
+    padding-top: 15px;
+}
+/* ADVANTAGES */
+.advantages{
+    padding-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+/*REVIEWS*/
+.reviews{
+    padding-top: 15px;
+}
+/*FAQ*/
+
+.faq{
+    padding-top: 15px;
 }
