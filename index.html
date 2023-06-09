@@ -7,21 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
 
-<header class="header" id="header">
+<header class="header sticky" id="header">
     <div class="container">
-        <a href="#"><img class="logo" src="images/logo.svg" alt="Logo"></a>
+        <a href="#" id="introBtn"><img class="logo" src="images/logo.svg" alt="Logo"></a>
         <nav class="navBar">
-            <a class="navLink" href="#" data-scroll="#intro">Главная</a>
-            <a class="navLink" href="#" data-scroll="#autopark">Наш автопарк</a>
-            <a class="navLink" href="#" data-scroll="#why">Почему мы</a>
-            <a class="navLink" href="#" data-scroll="#team">Наша команда</a>
-            <a class="navLink" href="#" data-scroll="#advantages">Наши преимущества</a>
-            <a class="navLink" href="#" data-scroll="#reviews">Отзывы</a>
-            <a class="navLink" href="#" data-scroll="#faq">Вопросы</a>
+            <a class="navLink" href="#" id="mainBtn">Главная</a>
+            <a class="navLink" href="#" id="autoBtn" data-scroll="#autopark">Наш автопарк</a>
+            <a class="navLink" href="#" id="whyBtn" data-scroll="#why">Почему мы</a>
+            <!--            <a class="navLink" href="#" data-scroll="#team">Наша команда</a>-->
+            <a class="navLink" href="#" id="advBtn" >Наши преимущества</a>
+            <!--            <a class="navLink" href="#" data-scroll="#reviews">Отзывы</a>-->
+            <a class="navLink" href="#" id="faqBtn">Вопросы</a>
         </nav>
         <div class="numberInfo">
             <a href="tel:+79324401803" class="number">+79324401803</a>
@@ -33,50 +33,112 @@
     <div class="container">
         <div class="introInner">
             <h1 class="intro_title">Автомобильные перевозки всех типов грузов от 1 кг до 100 тонн</h1>
-            <p class="intro_subtitle">С 2009 года перевозим грузы по всей России, а также в странны СНГ, Европу и
+            <p class="intro_subtitle">С 2009 года перевозим грузы по всей России, а также в страны СНГ, Европу и
                 Китай</p>
-            <button class="priceBtn">Рассчитать стоимость</button>
         </div>
     </div>
 </div>
 <div class="autopark" id="autopark">
     <div class="container">
-        <h1 class="autoparkTitle">Наш автопарк</h1>
-            <p>Тенты</p>
-            <p>Рефрижераторы</p>
-            <p>Тралы</p>
+        <h1 class="autoparkTitle">Наш автопарк</h1></div>
+    <div class="container">
+        <div class="autoparkInner">
+            <div class="row">
+                <div class="autoparkItem">
+                    <img class="autoparkImg" src="images/tent.svg" alt="">
+                    <p class="autoparkNames">Тенты</p>
+                </div>
+                <div class="autoparkItem">
+                    <img class="autoparkImg" src="images/refr.svg" alt="">
+                    <p class="autoparkNames">Рефрижераторы</p>
+                </div>
+                <div class="autoparkItem">
+                    <img class="autoparkImg" src="images/tral.svg" alt="">
+                    <p class="autoparkNames"> Тралы</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="autoparkItem">
+                    <img class="autoparkImg" src="images/gazelle.svg" alt="">
+                    <p class="autoparkNames">Газели</p>
+                </div>
+                <div class="autoparkItem">
+                    <img class="autoparkImg" src="images/microbus.svg" alt="">
+                    <p class="autoparkNames">Микроавтобусы</p>
+                </div>
+                <div class="autoparkItem">
+                    <img class="autoparkImg" src="images/kabluk.svg" alt="">
+                    <p class="autoparkNames">"Каблуки"</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 <div class="why" id="why">
+    <div class="container"><h1>5 причин почему нам доверяют</h1></div>
     <div class="container">
-        <h1>5 причин почему нам доверяют</h1>
-        <ul>
-            <li>Машины находятся в собственности ИП "Gruzilkin"</li>
-            <li>Возраст грузовиков не старше 3 лет</li>
-            <li>ГЛОНАСС трекинг местонахождения каждого грузовика</li>
-            <li>Обслуживание по регламенту только на диллерских СТО</li>
-            <li>Штатные водители с опытом международных перевозок</li>
-        </ul>
+        <section class="leftSide">
+            <p class="left">Машины находятся в собственности Gruzilkin</p>
+            <p class="left">Глонасс трекинг местонахождения каждого грузовика</p>
+            <p class="left">Штатные водители с опытом международных перевозок</p>
+        </section>
+        <img class="frontViewImg" src="images/frontView.jpg" alt="">
+        <section class="rightSide">
+            <p class="right">Возраст грузовиков не старше 3 лет</p>
+            <p class="right">Обслуживание по регламенту только на диллерских СТО</p>
+        </section>
     </div>
 </div>
-<div class="team" id="team">
-    <div class="container">
-        <h1>Наша команда</h1>
-    </div>
-</div>
+<!--<div class="team" id="team">-->
+<!--    <div class="container">-->
+<!--        <h1>Наша команда</h1>-->
+
+<!--    </div>-->
+<!--</div>-->
 <div class="advantages" id="advantages">
-    <div class="container">
-        <h1>Наши преимущества</h1>
+    <div class="container"><h1 class="advantagesTitle">Наши преимущества</h1></div>
+    <div class="background">
+        <div class="container">
+            <div class="adv">
+                <img src="images/sroki.svg">
+                <p class="advTitle">Сроки доставки</p>
+                <p>Полное соблюдение сроков доставки по договору</p>
+            </div>
+            <div class="adv">
+                <img src="images/voditeli.svg">
+                <p class="advTitle">Опытные водители</p>
+                <p>Наши водители знают что такое четкая погрузка и выгрузка</p>
+            </div>
+            <div class="adv">
+                <img src="images/docs.svg">
+                <p class="advTitle">Документальное сопровождение</p>
+                <p>Заполнение товаро-сопроводительных документов без ошибок</p>
+            </div>
+            <div class="adv">
+                <img src="images/map.svg">
+                <p class="advTitle">Отслеживание грузов</p>
+                <p>Мы знаем местонахождение каждого груза благодаря системе ГЛОНАСС</p>
+            </div>
+            <div class="adv">
+                <img src="images/lock.svg">
+                <p class="advTitle">Риски застрахованы</p>
+                <p>Все перевозимые грузы застрахованы в Gruzilkin</p>
+            </div>
+        </div>
     </div>
 </div>
-<div class="reviews" id="reviews">
-    <div class="container">
-        <h1>Отзывы</h1>
-    </div>
-</div>
+<!--<div class="reviews" id="reviews">-->
+<!--    <div class="container">-->
+<!--        <h1>Отзывы</h1>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="faq" id="faq">
+    <div class="container"><h1>Вопросы</h1></div>
     <div class="container">
-        <h1>Вопросы</h1>
+        <section>
+            <h3>Вы доставляете грузы собственным транспортом?</h3>
+            <p>Доставка осуществляется грузовиками находящимися в собственности ИП "Gruzilkin"</p>
+        </section>
     </div>
 </div>
 
