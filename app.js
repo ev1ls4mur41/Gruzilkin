@@ -1,48 +1,45 @@
-import $ from "jquery";
-$(function(){
 
-    /*Fixed Header*/
-    let header = $("#header");
-    let intro = $("#intro");
-    let introH;
-    let scrollPos = $(window).scrollTop();
+$(window).scroll(function(){
+    var sticky = $('.sticky'),
+        scroll = $(window).scrollTop();
 
-    $(window).on("scroll load resize", function(){
-        introH = intro.innerHeight();
-
-        scrollPos = $(this).scrollTop();
-
-        checkScroll(scrollPos, introH)
-    },);
-
-    function checkScroll(scrollPos, introH){
-        if(scrollPos > introH){
-            header.addClass("fixed");
-
-        }  else{
-            header.removeClass("fixed");
-        }
-    }
+    if (scroll >= 0) sticky.addClass('fixed');
+    else sticky.removeClass('fixed');
+});
 
 
+$("#advBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#advantages").offset().top
+    }, 2000);
+});
 
-    /*Smooth scroll*/
+$("#introBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top
+    }, 2000);
+});
 
-    $("[data-scroll]").on("click", function(event){
-        event.preventDefault();
+$("#faqBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#faq").offset().top
+    }, 2000);
+});
 
-        let blockId = $(this).data('scroll');
-        let blockOffset = $(blockId).offset().top;
+$("#autoBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#autopark").offset().top
+    }, 2000);
+});
 
-        console.log(blockOffset);
+$("#whyBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#why").offset().top
+    }, 2000);
+});
 
-        $("html, body").animate({
-            scrollTop: blockOffset - 60
-        }, 0 );
-    });
-
-
-
-
-
+$("#mainBtn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#intro").offset().top
+    }, 2000);
 });
