@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Gruzilkin</title>
@@ -7,7 +7,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="images/icons/apple-touch-icon-57x57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/apple-touch-icon-114x114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/apple-touch-icon-144x144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icons/apple-touch-icon-60x60.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icons/apple-touch-icon-120x120.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icons/apple-touch-icon-76x76.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png"/>
+    <link rel="icon" type="image/png" href="images/icons/favicon-196x196.png" sizes="196x196"/>
+    <link rel="icon" type="image/png" href="images/icons/favicon-96x96.png" sizes="96x96"/>
+    <link rel="icon" type="image/png" href="images/icons/favicon-32x32.png" sizes="32x32"/>
+    <link rel="icon" type="image/png" href="images/icons/favicon-16x16.png" sizes="16x16"/>
+    <link rel="icon" type="image/png" href="images/icons/favicon-128.png" sizes="128x128"/>
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF"/>
+    <meta name="msapplication-TileImage" content="mstile-144x144.png"/>
+    <meta name="msapplication-square70x70logo" content="mstile-70x70.png"/>
+    <meta name="msapplication-square150x150logo" content="mstile-150x150.png"/>
+    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png"/>
+    <meta name="msapplication-square310x310logo" content="mstile-310x310.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+            integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=baf72556-91f3-4298-b36a-5f46369cf19c&lang=ru_RU"
+            type="text/javascript">
+    </script>
+
 </head>
 <body>
 
@@ -16,15 +42,13 @@
         <a href="#" id="introBtn"><img class="logo" src="images/logo.svg" alt="Logo"></a>
         <nav class="navBar">
             <a class="navLink" href="#" id="mainBtn">Главная</a>
-            <a class="navLink" href="#" id="autoBtn" data-scroll="#autopark">Наш автопарк</a>
-            <a class="navLink" href="#" id="whyBtn" data-scroll="#why">Почему мы</a>
-            <!--            <a class="navLink" href="#" data-scroll="#team">Наша команда</a>-->
-            <a class="navLink" href="#" id="advBtn" >Наши преимущества</a>
-            <!--            <a class="navLink" href="#" data-scroll="#reviews">Отзывы</a>-->
+            <a class="navLink" href="#" id="autoBtn">Наш автопарк</a>
+            <a class="navLink" href="#" id="whyBtn">Почему мы</a>
+            <a class="navLink" href="#" id="advBtn">Наши преимущества</a>
             <a class="navLink" href="#" id="faqBtn">Вопросы</a>
         </nav>
         <div class="numberInfo">
-            <a href="tel:+79324401803" class="number">+79324401803</a>
+            <a href="tel:+79882575747" class="number">+79882575747</a>
             <p class="numberTime">Пн-Сб с 9.00 по 20.00</p>
         </div>
     </div>
@@ -89,12 +113,6 @@
         </section>
     </div>
 </div>
-<!--<div class="team" id="team">-->
-<!--    <div class="container">-->
-<!--        <h1>Наша команда</h1>-->
-
-<!--    </div>-->
-<!--</div>-->
 <div class="advantages" id="advantages">
     <div class="container"><h1 class="advantagesTitle">Наши преимущества</h1></div>
     <div class="background">
@@ -127,21 +145,119 @@
         </div>
     </div>
 </div>
-<!--<div class="reviews" id="reviews">-->
-<!--    <div class="container">-->
-<!--        <h1>Отзывы</h1>-->
-<!--    </div>-->
-<!--</div>-->
 <div class="faq" id="faq">
     <div class="container"><h1>Вопросы</h1></div>
     <div class="container">
-        <section>
-            <h3>Вы доставляете грузы собственным транспортом?</h3>
-            <p>Доставка осуществляется грузовиками находящимися в собственности ИП "Gruzilkin"</p>
-        </section>
+        <div class="faqInner">
+            <div class="quest 1">
+                <p class="faqTitle">Вы доставляете грузы собственным транспортом?</p>
+                <p class="faqText">Да, мы доставляем грузы собственным транспортом по всей России и за рубежом. Наш
+                    автопарк состоит из различных типов транспортных средств, способных перевозить любые виды грузов. Мы
+                    гарантируем высокое качество и безопасность наших услуг, а также конкурентоспособные цены и сроки.
+                    Обратитесь к нам, и мы подберем оптимальное решение для вашего груза.</p>
+            </div>
+            <div class="quest 2">
+                <p class="faqTitle">Вы предоставляете весь комплект необходимых документов?</p>
+                <p class="faqText">Мы даем все документы для грузоперевозки по России и миру. Среди них: ТТН, путевой
+                    лист,
+                    договор, CMR, инвойс, упаковочный лист, сертификат происхождения, Т1 и EX1. Мы следим за
+                    правильностью и
+                    своевременностью документов. Мы также помогаем с разрешениями и сертификатами для особых грузов. С
+                    нами
+                    ваша грузоперевозка будет без проблем и задержек!</p>
+            </div>
+            <div class="quest 3">
+                <p class="faqTitle">Можете ли вы гарантировать сохранность груза?</p>
+                <p class="faqText">Да, мы гарантируем сохранность груза. Для этого мы предлагаем:
+                    Страхование грузов от всех видов рисков.
+                    Грамотная упаковка и маркировка груза.
+                    Продуманная организация перевозки с учетом особенностей груза.
+                    Профессиональное отношение партнеров к складированию, погрузке и выгрузке груза.
+                    Мы несем полную ответственность за груз и возмещаем убытки в случае порчи или утери имущества во
+                    время
+                    транспортировки.</p>
+            </div>
+            <div class="quest 4">
+                <p class="faqTitle">Как быстро вы сможете расчитать стоимость перевозки моего груза?</p>
+                <p class="faqText">Мы можем расчитать стоимость перевозки вашего груза в течение нескольких минут.
+                    Для этого нам нужно знать вес, объем и маршрут вашего груза, а также сроки доставки.
+                    Вы можете заполнить связаться с нашими менеджерами по телефону или электронной почте.
+                    Мы гарантируем вам высокое качество услуг и конкурентоспособные цены.</p>
+            </div>
+            <div class="quest 5">
+                <p class="faqTitle">Оказываете ли Вы услуги таможенного оформления грузов?</p>
+                <p class="faqText">Да, мы оказываем услуги таможенного оформления грузов для наших клиентов. Мы имеем
+                    опыт
+                    работы с различными видами грузов и таможенными режимами. Мы поможем вам подготовить все необходимые
+                    документы и соблюсти все требования законодательства. Мы также предоставляем консультации по
+                    вопросам
+                    таможенного оформления и оптимизации налогов.</p>
+            </div>
+        </div>
     </div>
 </div>
+<footer class="footer">
+    <div class="leftSideF">
+        <div id="map" style="width: 960px; height: 493px"></div>
+    </div>
+    <div class="rightSideF">
+        <div class="rightSideInner">
+            <p class="rsTitle">Контактная информация</p>
+            <a href="tel:+79882575747" class="fNumber"><img src="images/fNumber.svg" class="fIcon">+79882575747</a>
+            <a href="mailto:gruzilkinip@gmail.com" class="email"><img src="images/fMail.svg" class="fIcon">gruzilkinip@gmail.com</a>
+            <p class="adress"><img src="images/fMap.svg" class="fIcon">344004, г. Ростов-на-Дону, ул Калинина, дом
+                32А</p>
+            <p class="time"><img src="images/fTime.svg" class="fIcon">Пн-Сб с 9.00 до 20.00</p>
+            <p class="ip">ИП “Gruzilkin”</p>
+            <p class="inn">ИНН 616898711272</p>
+            <p class="ogr">ОГРНИП 321619600178154</p>
+        </div>
+    </div>
+</footer>
+<script type="text/javascript">
+    ymaps.ready(init);
 
+    function init() {
+        const myMap = new ymaps.Map("map", {
+                center: [47.217720, 39.656847],
+                zoom: 15
+            }, {
+                searchControlProvider: 'yandex#search'
+            }),
+
+            // Создаем геообъект с типом геометрии "Точка".
+            myGeoObject = new ymaps.GeoObject({
+                // Описание геометрии.
+                geometry: {
+                    type: "Point",
+                    coordinates: [47.217720, 39.656847]
+                },
+                // Свойства.
+                properties: {
+                    // Контент метки.
+                    iconContent: '',
+                    hintContent: ''
+                }
+            }, {
+                // Опции.
+                // Иконка метки будет растягиваться под размер ее содержимого.
+                preset: 'islands#redStretchyDotIcon',
+                // Метку можно перемещать.
+                draggable: false
+            })
+
+        myMap.geoObjects
+            .add(myGeoObject)
+            .add(myPieChart)
+            .add(new ymaps.Placemark([55.684758, 37.738521], {
+                balloonContent: 'цвет <strong>красный</strong>'
+            }, {
+                preset: 'islands#dotIcon',
+                iconColor: '#FF0000'
+            }));
+    }
+
+</script>
 <script src="app.js"></script>
 </body>
 </html>

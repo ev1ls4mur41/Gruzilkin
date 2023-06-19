@@ -1,6 +1,6 @@
 
 $(window).scroll(function(){
-    var sticky = $('.sticky'),
+    let sticky = $('.sticky'),
         scroll = $(window).scrollTop();
 
     if (scroll >= 0) sticky.addClass('fixed');
